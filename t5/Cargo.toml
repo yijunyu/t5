@@ -1,0 +1,20 @@
+[package]
+name = "t5"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.52"
+walkdir = "2.3.2"
+md5 = "0.7.0"
+rand = "0.8.5"
+tree-sitter = "0.20.6"
+
+[dependencies.tree-sitter-rust]
+git = "https://github.com/tree-sitter/tree-sitter-rust"
+
+[dependencies.tree-sitter-c]
+git = "https://github.com/tree-sitter/tree-sitter-c"
+
+[build-dependencies] 
+cc = { version = "1.0.72", features = [ "parallel" ] }
